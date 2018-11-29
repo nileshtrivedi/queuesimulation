@@ -8,6 +8,8 @@ Here, I'm attempting to implement the discrete event time simulation method. In 
 
 I am also in the process of building a visualization of these queueing networks. Hence, using Processing language.
 
+The actual system evolution is implemented in office.py and the system setup is in queuesimulation.pyde
+
 # How To:
 
 - Install Processing IDE: https://processing.org/
