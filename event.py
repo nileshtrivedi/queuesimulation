@@ -1,3 +1,4 @@
+# We override the default ordering methods to be able to use bisect.insort for keeping the queue sorted
 class Event(object):
     
     def __init__(self, type, agent, customer, time):

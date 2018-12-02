@@ -5,12 +5,13 @@ class Agent(object):
         self.stage = stage
         self.available_at = 0
         self.customer = None # all agents are free at the start
-        self.position = PVector(x, y)
+        self.position_x = x
+        self.position_y = y
     
     def display(self):
         fill("#000000")
-        text(self.id, self.position.x+10, self.position.y-10)
+        text(self.id, self.position_x+10, self.position_y-10)
         fill(self.stage.color)
-        ellipse(self.position.x, self.position.y, 25, 25)
+        ellipse(self.position_x, self.position_y, 25, 25)
         if self.customer:
-            line(self.position.x, self.position.y, self.customer.position.x, self.customer.position.y)
+            line(self.position_x, self.position_y, self.customer.position_x, self.customer.position_y)
